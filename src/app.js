@@ -2,7 +2,6 @@
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
-
 const PORT = process.env.PORT || 3000;
 
 // declaring all required modules
@@ -37,7 +36,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(flash());
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: 'process.env.SESSION_SECRET',
     resave: false,
     saveUninitialized: false,
   })
