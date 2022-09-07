@@ -1,0 +1,34 @@
+<%- include('header') -%>
+
+
+<div class="alert">
+    <% if (messages.error) { %>
+        <%= messages.error %>
+      <% } %>
+</div>
+
+<div class="container">
+
+<form action="/login" method="POST">
+
+  <div class="sub-container">
+    <h2>Login Form</h2>
+    <form action="/login" method="POST">
+        <label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter email" name="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter password" name="password" required>
+        
+    <button type="submit">Login</button>
+    </form>
+
+  </div>
+
+  <div class="direct">
+    <span>Not a member? </span><a href="/register">Register here</a>
+  </div>
+</form>
+</div>
+
+<%- include('footer') -%>

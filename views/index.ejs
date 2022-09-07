@@ -1,0 +1,16 @@
+<%- include('header') -%>
+
+<div class="container">
+
+    <form action="/logout?_method=DELETE" method="POST">
+    
+      <div class="sub-container">
+        <h2>Welcome <%- name -%>! </h2>
+        
+        <button type="submit">Log Out</button>
+      </div>
+    
+    </form>
+    </div>
+
+    <%- include('footer') -%>

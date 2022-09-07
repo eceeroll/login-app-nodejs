@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #3a86ff;
+}
+
+form {
+    line-height: 2.5em;
+}
+
+.container {
+    background-color: #fff;
+    width: 35%;
+    border: none;
+    padding: 20px;
+    border-radius: .5em;
+    box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.121);
+}
+
+.sub-container {
+    padding: 10px 16px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: #04AA6D;
+  box-shadow: 5px 3px 6px gray;
+}
+
+button {
+  background-color: #4361ee;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.alert {
+    margin-top: -1em;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
